@@ -7,6 +7,9 @@ module.exports = {
         primary: '#2563eb', // 主品牌色
         secondary: '#4f46e5', // 辅助色
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
     },
   },
   plugins: [],
