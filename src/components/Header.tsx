@@ -14,18 +14,19 @@ export default function Header() {
   ]
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="shadow-sm top-0 z-50 fixed w-full">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/images/logo.jpg" alt="CreateTo Logo" className="h-10 w-auto" />
+            <img src="/images/logo.png" alt="CreateTo Logo" className="h-10 w-auto" />
+            <span className="text-xl font-bold text-white ml-2 font-serif text-[#d39b5d]">CreateTo</span>
           </Link>
 
           {/* 桌面导航 */}
           <div className="hidden md:flex space-x-8 items-center">
             {navLinks.map((link) => (
-              <Link key={link.path} href={link.path} className="text-gray-600 hover:text-primary transition-colors">
+              <Link key={link.path} href={link.path} className="text-gray-200 hover:text-primary transition-colors">
                 {link.name}
               </Link>
             ))}

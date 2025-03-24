@@ -18,7 +18,7 @@ export default async function projects() {
   }
   return (
     <div className="projects-root w-full gradient-bg-projects">
-      <div className="projects-container border-[1px] flex flex-col justify-center items-center">
+      <div className="projects-container flex flex-col justify-center items-center">
         {/* 第1栏 */}
         <div className="row1 flex md:flex-row flex-col justify-center items-center my-10">
           <div className="row1-left flex flex-1 flex-col justify-center items-center items-start text-white md:mr-[100px] mr-0">
@@ -38,11 +38,7 @@ export default async function projects() {
           </div>
         </div>
         {/* 第2栏 */}
-        <div className="row2">
-          <div className="grid sm:grid-cols-3 md:grid-cols-4 grid-cols-2 w-full">
-            <div className=""></div>
-          </div>
-        </div>
+        <div className="row2"></div>
         {/* 第3栏 */}
         <div className="row3">
           <ul className="flex flex-wrap justify-center items-center">

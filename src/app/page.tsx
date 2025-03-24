@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { CodeBracketSquareIcon, CloudArrowUpIcon, CpuChipIcon, SparklesIcon } from '@heroicons/react/24/outline'
-
+import '@/app/animate.css'
 export default function Home() {
   const features = [
     {
@@ -33,17 +33,11 @@ export default function Home() {
   ]
 
   return (
-    <div className="relative overflow-hidden">
-      {/* 动态粒子背景 */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute w-[800px] h-[800px] -top-[400px] -left-[400px] bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur-3xl" />
-        <div className="absolute w-[600px] h-[600px] -bottom-[300px] -right-[300px] bg-gradient-to-r from-emerald-500/20 to-cyan-400/20 rounded-full blur-3xl" />
-      </div>
-
+    <div className="relative overflow-hidden gradient-bg-home">
       {/* 主内容 */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <section className="min-h-screen flex items-center pt-20">
+        <section className="min-h-screen flex justify-between items-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,6 +59,15 @@ export default function Home() {
               开启数字化转型
             </motion.button>
           </motion.div>
+          {/* 右侧一张公司的主题图片, 尺寸自适应 */}
+          <motion.img
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            src="/images/rabbit.jpg"
+            alt="Hero"
+            className="w-1/4 h-full object-cover rounded-3xl shadow-2xl hidden md:block custom-filter cursor-pointer"
+          />
         </section>
 
         {/* 核心能力悬浮卡片 */}
@@ -121,9 +124,19 @@ export default function Home() {
               className="p-8 bg-gray-800 rounded-2xl"
             >
               <div className="text-5xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent mb-4">
-                +300
+                300+
               </div>
               <h3 className="text-xl text-white">成功交付项目</h3>
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              className="p-8 bg-gray-800 rounded-2xl"
+            >
+              <div className="text-5xl font-bold bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent mb-4">
+                500+
+              </div>
+              <h3 className="text-xl text-white">成功案例</h3>
             </motion.div>
 
             {/* 其他数据项... */}

@@ -48,6 +48,15 @@ a {
     radial-gradient(at 100% 0%, hsla(339, 49%, 30%, 1) 0, transparent 50%);
 }
 
+.custom-filter {
+  filter: grayscale(0%) contrast(100%) saturate(100%) brightness(100%);
+  transition: filter 0.3s ease;
+}
+
+.custom-filter:hover {
+  filter: grayscale(0%) contrast(120%) saturate(150%) brightness(110%);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
