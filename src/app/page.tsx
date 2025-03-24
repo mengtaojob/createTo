@@ -3,7 +3,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { CodeBracketSquareIcon, CloudArrowUpIcon, CpuChipIcon, SparklesIcon } from '@heroicons/react/24/outline'
-import '@/app/animate.css'
 export default function Home() {
   const features = [
     {

@@ -17,7 +17,7 @@ export default async function projects() {
     ],
   }
   return (
-    <div className="projects-root w-full gradient-bg-projects">
+    <div className="projects-root w-full pt-16 gradient-bg-projects">
       <div className="projects-container flex flex-col justify-center items-center">
         {/* 第1栏 */}
         <div className="row1 flex md:flex-row flex-col justify-center items-center my-10">

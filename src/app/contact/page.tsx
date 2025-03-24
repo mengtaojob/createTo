@@ -6,9 +6,11 @@ export default async function Contact() {
     description: '请联系我们',
   }
   return (
-    <div>
-      <h1>{data.title}</h1>
-      <p>{data.description}</p>
+    <div className="min-h-screen  gradient-bg-home py-16">
+      <div className="container">
+        <h1>联系我们</h1>
+        <p>{data.description}</p>
+      </div>
     </div>
   )
 }

@@ -4,8 +4,8 @@ import { services } from '@/data/services'
 export default function Services() {
   return (
     <>
-      <section className="py-16">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="pt-16 min-h-screen gradient-bg-home">
+        <div className="mt-16 max-w-6xl mx-auto px-4">
           <h1 className="text-4xl font-bold text-center mb-12">服务项目</h1>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service) => (

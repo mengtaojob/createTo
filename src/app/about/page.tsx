@@ -6,9 +6,11 @@ export default async function About() {
     title: '关于我们',
   }
   return (
-    <div>
-      <h1>关于我们</h1>
-      <p>{data.description}</p>
+    <div className="min-h-screen  gradient-bg-home py-16">
+      <div className="container">
+        <h1>关于我们</h1>
+        <p>{data.description}</p>
+      </div>
     </div>
   )
 }
