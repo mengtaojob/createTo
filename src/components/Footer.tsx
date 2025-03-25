@@ -8,13 +8,6 @@ export default function Footer() {
             <h4 className="font-medium mb-4 text-sm dark:text-gray-50">
               Copyright © {new Date().getFullYear()} Anson. All rights reserved.
             </h4>
-            <a
-              className="text-gray-500 text-sm block mb-2 hover:text-gray-600 transition-colors duration-200"
-              target="_blank"
-              href="https://github.com/mengtaojob/createTo"
-            >
-              Github
-            </a>
           </div>
         </div>
       </div>
